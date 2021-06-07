@@ -8,7 +8,7 @@
     <title>Bookstore</title>
 
     <link rel="stylesheet" href="style.css">
-
+    <script defer src="../Platonic/script.js"></script>
 
 
 </head>
@@ -22,7 +22,7 @@
             <nav>
                 <ul>
                     <li><a href="../Platonic/index.html" >Home</a></li>
-                    <li><a href="" >Buy</a></li>
+                    <li><a href="" >Browse</a></li>
                     <li><a href="../Platonic/Audiobook.html" >Audiobook</a></li>
                 </ul>
             </nav>
@@ -41,7 +41,18 @@
         </div>     
     </div>
 
-   
+   <form id="form">
+       <div>
+           <label for="name">Name</label>
+           <input id="name" name="name" type="text"required >
+       </div>
+
+       <div>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" required>
+            <button type="submit">Submit</button>
+        </div>
+   </form>
 
 
 </body>

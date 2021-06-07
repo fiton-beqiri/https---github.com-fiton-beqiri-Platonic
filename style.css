@@ -66,8 +66,8 @@ nav ul li a{
  .col{
 
     position: absolute;
-    top: 50%;
-    left: 20%;
+    bottom:10% ;
+    right: 1%;
     transform: translate(-50%, -50%);
     display: inline-block; 
 
@@ -148,3 +148,10 @@ nav ul li a{
     width: 80px;
     cursor: pointer;
 }
+
+#form{
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+}
+
