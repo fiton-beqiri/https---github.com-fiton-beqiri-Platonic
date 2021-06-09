@@ -7,14 +7,12 @@
 
 .container{
   
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7)),url(.//Images/Shelf.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.4) , rgba(0,0,0,0.7)),url(.//Images/Shelf.jpg);
     position:relative;
     background-position: center;
     background-size: cover;
-    padding-left: 8%;
-    padding-right: 8%;
     box-sizing: border-box;
 }
 
@@ -88,7 +86,7 @@ nav ul li a{
     
  }
 
- button{
+ .button{
      width: 180px;
      color: #000;
      font-size: 12px;
@@ -150,8 +148,36 @@ nav ul li a{
 }
 
 #form{
-    display: inline-block;
+    border: 1px solid black;
+    width: 20%;
+
     position: absolute;
+    margin: auto 20%;
+    height: 20%;
     top: 40%;
+    bottom: 40%;
+
+    
+    background: white;
+   padding: 2%;
+ 
+     /*justify-content: center;
+    align-items: center;
+  
+    text-align: center;
+    display: inline-block;*/
+    
 }
 
+.button-box{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px;
+    background:blanchedalmond;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    display: inline;
+}
