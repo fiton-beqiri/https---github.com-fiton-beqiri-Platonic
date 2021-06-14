@@ -1,23 +1,23 @@
-const name = document.getElementById('name')
-const password = document.getElementById('password')
-const form = document.getElementById('form')
-const errorElement = document.getElementById('error')
-
-
-form.addEventListener('submit', (e) => {
-    if(password.value.length <=6){
-        messages.push('Fjalekalimi duhet te jete me i gjate se 6 karaktere!')
+function changeForm(form) {
+    let forms = document.querySelectorAll("form>div");
+    if (form == 0) {
+        forms[0].classList.remove("hidden");
+        forms[0].classList.add("form-style");
+        forms[1].classList.add("hidden");
+        forms[1].classList.remove("form-style");
+    } else {
+        forms[1].classList.remove("hidden");
+        forms[1].classList.add("form-style");
+        forms[0].classList.add("hidden");
+        forms[0].classList.remove("form-style");
     }
+}
 
-    if(password.value.length >=20){
-        messages.push('Fjalekalimi duhet te jete me i shkurter se 20 karaktere!')
+function validate(form) {
+    let inputs = document.querySelectorAll("input");
+    if (form == 0 && inputs[0].value == "" && inputs[1].value == "") {
+        alert("Nuk keni mbushur te dhenat");
+    } else if (form == 1 && inputs[3].value == "" && inputs[4].value == "" && inputs[5].value == "") {
+        alert("Nuk mund te regjistroheni nese nuk keni mbushur te dhenat");
     }
-
-
-    if(messages.length > 0){
-    e.preventDefault()
-    errorElement.innerText = messages.join(', ')
-    }
-
-
-})
+}
