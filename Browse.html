@@ -4,26 +4,123 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
+     <title>Browse</title>
      <link rel="stylesheet" href="style-br.css">
  </head>
  <body>
-     <div class fotot></div>
 
 
-     <div class="slider">
-        <div class="slider-content active">
-          <img src="Images/Action-Adventure.jpg" alt="" />
-          <h1>some Title</h1>
+
+  <div class="container">
+        
+    <div class="navbar">
+        <img id="PlatonicLogo" src=".//Images//logo3.png" alt="Logo1" class="logo" >
+       
+           <ul class="headerList">
+                <li><a href="../Platonic/index.html" >Home</a></li>
+                <li><a href="" >Browse</a></li>
+                <li><a href="../Platonic/Audiobook.html" >Audiobook</a></li>
+            </ul>
+     
+        <img src=".//Images/menu.png" class="menu-icon">
+    </div>
+</div>
+<section class="klas">
+  <h1 class="he3">About us</h1>
+
+ <div class="triFotot">
+  <figure>
+      <img src="Images/Ab1.jpg" alt="About us picture 1">
+      <p align = left><em>
+      
+          This is the our meeting office, this is where our team meets at least once in a week for different discussions. 
+          This is also where a lot of brainstorming takes place, where a lot of ideas came from.
+          Ideas which we put a lot of thinking and if we come into conclusions, then we implement into our product to make it better and better.
+      </br>
+      </em>
+      </p>
+      
+  </figure>
+
+  
+  <figure>
+      <img src="Images/Ab2.jpg" alt="About us picture 2">
+      <p align = left><em>
+          This is the space where our work takes place, it is a very well designed space, containing separate and mutual areas.
+          This helps for focusing on personal duties and also in team activities, so an open space where you can be alone in your own area, or a quick link up with your colleagues in case of needing a quick help.</em> </p>
+      
+  </figure>
+  <figure>
+      <img src="/Images/Ab5.jpg" alt="About us picture 2">
+      <p align=left><em>Our team has professional employees, in different areas that our type of work includes. We also have contracts with expertise companies for testing products like ours, and with all the testing that took place to make sure that the drone works perfectly, they gave us the green light to bring you the best drone available.</em></p>
+  
+  </figure>
+
+  </div> 
+  <h1 class="h1japosht">This is where all the work is done.</h1>  
+</section>
+<section> </section>
+<footer>Rr.Shefqet Shkupi, Prishtine • Nr telefonit 044-856-823 </footer>
+
+</body>
+</html>
+
+
+
+
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+
+        <div class="slide first">
+          <img src="../Platonic/Images/20922.jpg" alt="">
+
+
         </div>
-        <div class="slider-content not-active">
-          <img src="Images/Classic.jpg"" />
-          <h1>another title</h1>
+
+        <div class="slide">
+          <img class src="../Platonic/Images/Classic.jpg" alt="">
         </div>
-        <div class="slider-content not-active">
-          <img src="Images/Classic1.jpg" alt="" />
-          <h1>bla bla</h1>
+        <div class="slide">
+          <img src="../Platonic/Images/Classic1.jpg" alt="">
         </div>
-      </div>
- </body>
- </html>
+        <div class="slide">
+          <img src="../Platonic/Images/Fiction.jpg" alt="">
+        </div>
+    <!--automatic navigation start-->
+    <div class="navigation-auto">
+      <div class="auto-btn1"></div>
+      <div class="auto-btn2"></div>
+      <div class="auto-btn3"></div>
+      <div class="auto-btn4"></div>
+    </div>
+    <!--automatic navigation end-->
+  </div>
+  <!--manual navigation start-->
+  <div class="navigation-manual">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+    <label for="radio4" class="manual-btn"></label>
+  </div>
+  <!--manual navigation end-->
+</div>
+<!--image slider end-->
+
+<script type="text/javascript">
+var counter = 1;
+setInterval(function(){
+  document.getElementById('radio' + counter).checked = true;
+  counter++;
+  if(counter > 4){
+    counter = 1;
+  }
+}, 5000);
+</script>
+
+</body>
+</html>
+  
