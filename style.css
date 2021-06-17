@@ -1,294 +1,274 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-
-body{
-    background-image: linear-gradient(rgba(0,0,0,0.4) , rgba(0,0,0,0.7)),url(.//Images/Shelf.jpg);
-    background-position: center;
-    background-size: cover;
-  
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+    url(.//Images/Shelf.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
-
-.container{
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    right: 5%;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: 100vh;
-   
+.container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  right: 5%;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
 }
 
-
-
-.navbar{
-    height: 12%;
-    display: flex;
-    align-items: center;
-    margin-left: 40px;
+.navbar {
+  height: 12%;
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
 }
 
-.logo{
-   
+.logo {
   height: 70px;
   border-radius: 50%;
-    /*width: 50px;
-    cursor: pointer;
-   */
-  }
+  /*width: 50px;
+  cursor: pointer;
+ */
+}
 
-
-.menu-icon{
-    width: 30px;
-    cursor: pointer;
-    margin-left: 40px;
+.menu-icon {
+  width: 30px;
+  cursor: pointer;
+  margin-left: 40px;
 }
 
 ul {
-    display: flex;
-    list-style-type: none;
-    flex-wrap: nowrap;
-  }
-  
+  display: flex;
+  list-style-type: none;
+  flex-wrap: nowrap;
+}
+
 .headerList li {
-    transition: 0.5s ease;
-    margin: 0px 4px;
-    height: 30px;
-    width: 100px;
-    text-align: center;
-    padding-top: 10px;
-    color: white;
-  
-    border-radius: 10px;
-  }
-  
-  
-  
-  ul li:hover {
-      transform: translateY(-10px);
-    
-  }
+  transition: 0.5s ease;
+  margin: 0px 4px;
+  height: 30px;
+  width: 100px;
+  text-align: center;
+  padding-top: 10px;
+  color: white;
 
-  ul li a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 13px;
+  border-radius: 10px;
 }
 
-.row{
-    display: flex;
-    height: 88%;
-    align-items: center;
- }
- 
- .col{
-
-    width: 100px;
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    transform: translate(-50%, -50%);
-    display: inline-block;
-     
- }
- h1{
-    color: #fff; 
-    font-size: 40px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
- }
- p{
-    color: #fff; 
-    font-size: 18px;
-    line-height: 15px;
-    width: 450px;
-    font-family: 'Times New Roman', Times, serif;
-    
-    
- }
-
- .button{
-     width: 180px;
-     color: #000;
-     font-size: 12px;
-     padding: 12px;
-     background: #fff;
-     border: 0;
-     border-radius: 20px;
-     outline: none;
-     margin-top: 30px;
-     display: inline;
-
- }
-
- .abook{
-     height: 100vh;
-     width: 100%;
-     background-image: url(../Platonic/Images/Headphones2.jpg);
-     background-size: cover;
-     background-position: center;
-     position: relative;
- }
-
- .content{
-     width: 100%;
-     position: absolute;
-     top: 40%;
- }
-
- .left-col{
-     margin-left: 6%;
- }
-
- .left-col h1{
-    font-size: 50px;
-    color: white;
-    line-height: 70px;
-    float: left;
+ul li:hover {
+  transform: translateY(-10px);
 }
 
-.right-col{
-    float: right;
-    margin-right: 6%;
-    margin-top: 120px;
-    display: flex;
-    align-items: center;
-
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
 }
 
-.right-col p{
-    font-size: 18px;
-    color: #FFFFFF;
-    font-weight: 400;
-    margin-right: 15px;
+.row {
+  display: flex;
+  height: 88%;
+  align-items: center;
 }
 
-#ikona{
-    width: 80px;
-    cursor: pointer;
+.col {
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+h1 {
+  color: #fff;
+  font-size: 40px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 15px;
+  width: 450px;
+  font-family: "Times New Roman", Times, serif;
 }
 
+.button {
+  width: 180px;
+  color: #000;
+  font-size: 12px;
+  padding: 12px;
+  background: #fff;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px;
+  display: inline;
+}
+
+.abook {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../Platonic/Images/Headphones2.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+}
+
+.left-col {
+  margin-left: 6%;
+}
+
+.left-col h1 {
+  font-size: 50px;
+  color: white;
+  line-height: 70px;
+  float: left;
+}
+
+.right-col {
+  float: right;
+  margin-right: 6%;
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.right-col p {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 400;
+  margin-right: 15px;
+}
+
+#ikona {
+  width: 80px;
+  cursor: pointer;
+}
 
 .form {
-    top: 30%;
-    width: 40%;
-    left: 30%;
-    min-height: 270px;
-    height: auto;
-    position: absolute;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    background-image: linear-gradient(45deg, #2468e7, #03222c);
-
+  top: 30%;
+  width: 40%;
+  left: 30%;
+  min-height: 270px;
+  height: auto;
+  position: absolute;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-image: linear-gradient(45deg, #2468e7, #03222c);
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
-
-
 .link-container {
-    display: flex;
-    justify-content: space-evenly;
-    height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  height: 50px;
 }
 
 .link-container a {
-    text-decoration: none;
-    font-size: 22px;
-    color: white;
-    width: 50%;
-    text-align: center;
-    padding-top: 10px;
-    transition: all 0.2s ease;
-    border-bottom: 1px solid grey;
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  width: 50%;
+  text-align: center;
+  padding-top: 10px;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid grey;
 }
 
 .link-container a:first-child {
-    border-right: 2px solid grey;
+  border-right: 2px solid grey;
 }
 
-.link-container>a:hover {
-    background-color: #34ebab;
-    transition: all 0.2s ease;
+.link-container > a:hover {
+  background-color: #34ebab;
+  transition: all 0.2s ease;
 }
 
 .form-style {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-around;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
 }
 
 .form-style label {
-    margin-top: 20px;
-    font-size: 20px;
-    color: white;
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
 }
 
 .form-style .input {
-    margin-top: 10px;
-    width: 60%;
-    position: relative;
-    left: 20%;
-    border: 0px;
-    padding-left: 10px;
-    height: 30px;
-    border-radius: 5px;
-    background-color: #cae0d9;
-
+  margin-top: 10px;
+  width: 60%;
+  position: relative;
+  left: 20%;
+  border: 0px;
+  padding-left: 10px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #cae0d9;
 }
 
 .forms {
-    height: auto;
+  height: auto;
 }
 
 #submit {
-    width: 20%;
-    left: 40%;
-    background-color: #66FF00;
-    margin-bottom: 30px;
-
+  width: 20%;
+  left: 40%;
+  background-color: #66ff00;
+  margin-bottom: 30px;
 }
 
-@media only screen and (min-width: 480px){
-    .navbar{
-        flex-direction: column;
-        align-items: center;
-    }
-    .logo{
-        width: 50px;
-        height: 50px;
-    }
-    .nav{
-        padding: 0;
-    }
+@media only screen and (min-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  .nav {
+    padding: 0;
+  }
 
-    .form{
-        width: 255px;
-        height: 294px;
-        left: 16%;
-    }
+  .form {
+    width: 255px;
+    height: 294px;
+    left: 16%;
+  }
 
-    .container{
-        height: 375px;
-    }
+  .container {
+    height: 375px;
+  }
 
-    .col{
-        width: 100px;
-        height: 280px;
-        bottom: 21%;
-        position: absolute;
-        display: inline-block;
-        top: 87%;
-        left: 114px;
-    }
+  .col {
+    width: 100px;
+    height: 280px;
+    bottom: 21%;
+    position: absolute;
+    display: inline-block;
+    top: 87%;
+    left: 114px;
+  }
+}

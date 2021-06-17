@@ -1,58 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Audiobook</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="abook">
-        <div class="navbar">
-            <img src=".//Images//logo3.png" alt="Logo1" class="logo" >
-            <nav>
-                <ul>
-                    <li><a href="../Platonic/index.html" >Home</a></li>
-                    <li><a href="" >Buy</a></li>
-                    <li><a href="../Platonic/Audiobook.html" >Audiobook</a></li>
-                </ul>
-            </nav>
-            <img src=".//Images/menu.png" class="menu-icon">
-        </div>
+      <div class="navbar">
+        <img src=".//Images//logo3.png" alt="Logo1" class="logo" />
+        <nav>
+          <ul>
+            <li><a href="../Platonic/index.html">Home</a></li>
+            <li><a href="../Platonic/Browse.html"Browse</a></li>
+            <li><a href="../Platonic/Audiobook.html">Audiobook</a></li>
+          </ul>
+        </nav>
+        <img src=".//Images/menu.png" class="menu-icon" />
+      </div>
     </div>
 
     <div class="content">
-        <div class="left-col">
-            <h1>Listen <br> to <br> AudioBook</h1>
-        </div>
+      <div class="left-col">
+        <h1>
+          Listen <br />
+          to <br />
+          AudioBook
+        </h1>
+      </div>
 
-        <div class="right-col">
-            <p>Kliko Ketu Per Te Ndegjuar</p>
-            <img src="../Platonic/Images/play.png" alt="play" id="ikona">
-        </div>
+      <div class="right-col">
+        <p>Kliko Ketu Per Te Ndegjuar</p>
+        <img src="../Platonic/Images/play.png" alt="play" id="ikona" />
+      </div>
     </div>
 
     <audio id="zeri">
-        <source src="../../Stuff/Music/Burak Yeter - Tuesday ft. Danelle Sandoval.mp3" type="audio/mp3">
+      <source
+        src="../../Stuff/Music/Burak Yeter - Tuesday ft. Danelle Sandoval.mp3"
+        type="audio/mp3"
+      />
     </audio>
 
     <script>
-       var zeri = document.getElementById("zeri");
+      var zeri = document.getElementById("zeri");
 
-       var icon = document.getElementById("ikona");
+      var icon = document.getElementById("ikona");
 
-       icon.onclick= function(){
-        if(zeri.paused){
-            zeri.play();
-            ikona.src = "../Platonic/Images/pause.png";
-        }else{
-            zeri.pause();
-            ikona.src = "../Platonic/Images/play.png";
-        }  
-        
-       }
+      icon.onclick = function () {
+        if (zeri.paused) {
+          zeri.play();
+          ikona.src = "../Platonic/Images/pause.png";
+        } else {
+          zeri.pause();
+          ikona.src = "../Platonic/Images/play.png";
+        }
+      };
     </script>
-
-</body>
+  </body>
 </html>
