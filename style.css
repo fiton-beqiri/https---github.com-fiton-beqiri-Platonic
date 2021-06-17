@@ -5,14 +5,23 @@
 }
 
 
-.container{
-  
-    width: 100vw;
-    height: 100vh;
+body{
     background-image: linear-gradient(rgba(0,0,0,0.4) , rgba(0,0,0,0.7)),url(.//Images/Shelf.jpg);
     background-position: center;
     background-size: cover;
   
+}
+
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    right: 5%;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+   
 }
 
 
@@ -25,9 +34,12 @@
 }
 
 .logo{
-    width: 50px;
-    cursor: pointer;
    
+  height: 70px;
+  border-radius: 50%;
+    /*width: 50px;
+    cursor: pointer;
+   */
   }
 
 
@@ -37,18 +49,32 @@
     margin-left: 40px;
 }
 
-nav{
-    flex: 1;
-    text-align: right;
-}
+ul {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: nowrap;
+  }
+  
+.headerList li {
+    transition: 0.5s ease;
+    margin: 0px 4px;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+  
+    border-radius: 10px;
+  }
+  
+  
+  
+  ul li:hover {
+      transform: translateY(-10px);
+    
+  }
 
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin-left: 60px;
-}
-
-nav ul li a{
+  ul li a{
     text-decoration: none;
     color: #fff;
     font-size: 13px;
@@ -233,3 +259,36 @@ nav ul li a{
     margin-bottom: 30px;
 
 }
+
+@media only screen and (min-width: 480px){
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    .nav{
+        padding: 0;
+    }
+
+    .form{
+        width: 255px;
+        height: 294px;
+        left: 16%;
+    }
+
+    .container{
+        height: 375px;
+    }
+
+    .col{
+        width: 100px;
+        height: 280px;
+        bottom: 21%;
+        position: absolute;
+        display: inline-block;
+        top: 87%;
+        left: 114px;
+    }

@@ -18,14 +18,14 @@
     <div class="container">
         
         <div class="navbar">
-            <img src=".//Images//logo3.png" alt="Logo1" class="logo" >
-            <nav>
-                <ul>
+            <img id="PlatonicLogo" src=".//Images//logo3.png" alt="Logo1" class="logo" >
+           
+               <ul class="headerList">
                     <li><a href="../Platonic/index.html" >Home</a></li>
                     <li><a href="" >Browse</a></li>
                     <li><a href="../Platonic/Audiobook.html" >Audiobook</a></li>
                 </ul>
-            </nav>
+         
             <img src=".//Images/menu.png" class="menu-icon">
         </div>
     </div>
