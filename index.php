@@ -36,7 +36,7 @@
             <h1>Platonic Bookstore</h1>
             <p>Libraria me e madhe Digjitale ne Kosove</p>
 
-            <button class="button" type="button">Explore</button>
+          
 
         </div>     
     </div>
@@ -70,9 +70,9 @@
             <label for="">Password:</label>
             <input type="text" class="input" placeholder="password..." />
             <input
-              id="submit"
+              id="submit1"
               type="submit"
-              class="input submit"
+              class="submit1"
               value="Login"
               onclick="validate(1)"
             />
